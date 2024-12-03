@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "NewPlanes";
+}
+
+<h2>NewPlanes</h2>
+
+<center><h1>ADD PLANE</h1></center>
+
+@if (ViewBag.PlaneAdd != null){
+   <p> @ViewBag.PlaneAdd</p>
+}
+<form method="post">
+    <input type="text" id="Planename" name="planename"/><br/>
+    <input type="submit" value="Add plane" />
+
+</form>

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Planes";
+}
+
+<h2>Planes</h2>
+
+@foreach (var items in Model)
+            {
+
+    <table>
+        <thead>
+            <tr>
+                <td>@items.planeid</td>
+                <td>@items.planename</td>
+                <td>@items.planedescription</td>
+            </tr>
+        </thead>
+    </table>
+    
+            }
+
